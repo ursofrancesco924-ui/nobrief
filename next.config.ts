@@ -5,14 +5,20 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'cultandcrown.com',
+      },
+      {
+        protocol: 'http',
+        hostname: 'cultandcrown.com',
+      },
+      {
+        protocol: 'https',
         hostname: '**.wordpress.com',
       },
       {
         protocol: 'https',
         hostname: '**.wp.com',
       },
-      // Aggiungi qui il dominio del tuo WordPress se self-hosted:
-      // { protocol: 'https', hostname: 'tuosito.com' },
     ],
   },
 };
