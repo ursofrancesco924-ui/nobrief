@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --cream: #f5f0e8;
+  --dark: #0d0d0d;
+  --dark-mid: #1a1a1a;
+  --dark-card: #141414;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0d0d0d;
+  color: #e8e0d0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.02em;
+}
+
+.text-gold { color: #c9a84c; }
+.border-gold { border-color: #c9a84c; }
+.bg-gold { background-color: #c9a84c; }
+
+/* WordPress content */
+.wp-content h2, .wp-content h3, .wp-content h4 {
+  color: #f0e8d8;
+  margin: 1.5em 0 0.5em;
+  line-height: 1.3;
+}
+.wp-content h2 { font-size: 1.6rem; }
+.wp-content h3 { font-size: 1.3rem; }
+
+.wp-content p {
+  color: #c8bfb0;
+  line-height: 1.85;
+  margin-bottom: 1.4em;
+}
+
+.wp-content a {
+  color: #c9a84c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.wp-content blockquote {
+  border-left: 3px solid #c9a84c;
+  padding: 0.5em 1.5em;
+  margin: 2em 0;
+  font-style: italic;
+  color: #b0a898;
+}
+
+.wp-content ul, .wp-content ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.4em;
+  color: #c8bfb0;
+}
+.wp-content li { margin-bottom: 0.4em; }
+
+.wp-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1.5em auto;
+  display: block;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb { background: #3a3428; border-radius: 3px; }
